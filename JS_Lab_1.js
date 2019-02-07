@@ -25,3 +25,7 @@ if(x === z) {
 if (y === z) {
 	alert(name2 + " and " + name3 + " are the same length")
 }
+
+if(x === y && x === z) {
+	alert("All names are the same length!")
+}
