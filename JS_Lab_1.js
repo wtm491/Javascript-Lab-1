@@ -1,17 +1,26 @@
+
+// Get User input for names
 let name1 = prompt("Give me name 1: ");
 let name2 = prompt("Give me name 2: ");
 let name3 = prompt("Give me name 3: ");
 
+// find length of each name and store in variable
 let x = name1.length;
 let y = name2.length;
 let z = name3.length;
 
+//find the longest name
 if (x > y && x > z) {
   alert(name1 + " has the longest name!")
 } else if (y > x && y > z){
   alert(name2 + " has the longest name!")
 } else if (z > x && z > y) {
   alert(name3  + " has the longest name!")
+}
+
+// find what names are equal length
+if(x === y && x === z) {
+	alert("All names are the same length!")
 }
 
 if(x === y) {
@@ -24,8 +33,4 @@ if(x === z) {
 
 if (y === z) {
 	alert(name2 + " and " + name3 + " are the same length")
-}
-
-if(x === y && x === z) {
-	alert("All names are the same length!")
 }
